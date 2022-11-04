@@ -1,0 +1,15 @@
+.swal2-image{
+    position: absolute;
+    left: 50%;
+    margin-left: -116px !important;
+    top:-92px !important;
+    height: 60px !important;
+}
+
+.swal2-html-container .alerta_validacao{
+    font-size: 12px;
+    background-color: #F7D7DA;
+    color: #701D26;
+    border-radius: 6px;
+    padding: 10px;
+}

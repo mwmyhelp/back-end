@@ -1,0 +1,31 @@
+pipelines:
+  branches: 
+    master: #Run only for the Master Deployment
+    - step:
+        name: Deployment to prod
+        deployment: production
+        script:
+          - echo "Deploying to production..."
+          - mkdir -p ~/.ssh
+          - echo $PUBLIC_KEY | base64 --decode >> ~/.ssh/authorized_keys
+          - echo $PUBLIC_KEY | base64 --decode >> ~/.ssh/id_rsa.pub
+          - echo $PRIVATE_KEY | base64 --decode >> ~/.ssh/id_rsa
+          - chmod -R go= ~/.ssh
+          - eval 'ssh-agent'
+          - ssh -o StrictHostKeyChecking=no $HOST_USER@$HOST_IP 'bash -s < /home/deploy_master.sh'         
+          - echo "Deployed to Production! Go Go Go!"
+    
+    staging: #Run only for the Staging Deployment
+    - step:
+        name: Deployment to prod
+        deployment: production
+        script:
+          - echo "Deploying to staging..."
+          - mkdir -p ~/.ssh
+          - echo $PUBLIC_KEY | base64 --decode >> ~/.ssh/authorized_keys
+          - echo $PUBLIC_KEY | base64 --decode >> ~/.ssh/id_rsa.pub
+          - echo $PRIVATE_KEY | base64 --decode >> ~/.ssh/id_rsa
+          - chmod -R go= ~/.ssh
+          - eval 'ssh-agent'
+          - ssh -o StrictHostKeyChecking=no $HOST_USER@$HOST_IP 'bash -s < /home/deploy_staging.sh'         
+          - echo "Deployed to Staging! Go Go Go!"

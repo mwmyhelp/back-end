@@ -1,0 +1,261 @@
+.nav-tarefas{
+    background-color: #FCDA64;
+    width: 100%;
+}
+
+
+.nav-tarefas .navegador li{
+    list-style: none;
+    background-color: #474642;
+    border-right: 2px solid rgba(0,0,0,.2);
+}
+
+.nav-tarefas .navegador li.ativo, .nav-tarefas .navegador li:hover{
+    background-color: #1D1D1B;
+    cursor: pointer;
+}
+
+.nav-tarefas .navegador li:first-child{
+    border-left: 2px solid rgba(0,0,0,.2);
+}
+
+.nav-tarefas .navegador li a{
+   color: #fff;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.nav-tarefas .navegador li.ativo a{
+    color: #FCDA64;
+}
+
+.painel-tarefas{
+    background-color: #EEF0F4;
+    overflow-x: scroll;
+}
+
+.painel-tarefas .coluna{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.painel-tarefas .coluna .cabecalho{
+   background-color: #E0DFE0;
+}
+
+.painel-tarefas .coluna .cartoes .cartao{
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+
+.painel-tarefas .coluna .cartoes .cartao:hover{
+    border: 1px solid #FCDA64;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+}
+
+.painel-tarefas .coluna .cartoes .cartao .capa{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.painel-tarefas .coluna .cartoes .cartao .etiquetas{
+    font-size: 8px;
+}
+
+.painel-tarefas .coluna .cartoes .cartao .etiquetas .tag{
+    width: 30px;
+}
+
+.painel-tarefas .coluna .cartoes .cartao ,.descricao
+.painel-tarefas .coluna .cartoes .cartao .barra-01,
+.painel-tarefas .coluna .cartoes .cartao .barra-01 .data-limite,
+.painel-tarefas .coluna .cartoes .cartao .barra-01 .reuniao{
+    font-size: 12px;
+}
+
+.painel-tarefas .coluna .cartoes .cartao .barra-01 .anexos a{
+    font-size: 10px;
+    padding: 3px 4px 3px 4px;
+    color: #FFF;
+    border-radius: 4px;
+}
+
+.painel-tarefas .coluna .cartoes .cartao .barra-01 .anexos .dropdown-menu{
+    border: 1px solid #FCDA64;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+}
+
+.painel-tarefas .coluna .cartoes .cartao .barra-01 .anexos .dropdown-menu .dropdown-item{
+    color: #000;
+}
+
+.painel-tarefas .coluna .cartoes .cartao .barra-01 .envolvidos{
+    cursor: pointer;
+}
+
+.painel-tarefas .coluna .cartoes .cartao .barra-01 .envolvidos svg{
+    width: 25px;
+}
+
+.painel-tarefas .coluna .rodape{
+    background-color: #474642;
+    color: #FFF;
+    padding: 5px 2px 5px 2px;
+    transition: all 0.3s;
+}
+
+.painel-tarefas .coluna .rodape:hover{
+    background-color: #FCDA64;
+    color: #000;
+    cursor: pointer;
+}
+
+/** Hexagonais Grid **/
+use {
+    transition: 0.4s;
+    cursor: pointer;
+    fill:#fff;
+}
+
+.pod-wrap use:hover {
+    fill: #FCDA64;
+}
+
+/* other styling */
+#hexMembros svg {
+    width: 600px;
+    flex: 1;
+}
+#hexMembros a {
+    color: #ccc;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+#hexMembros a:hover {
+    color: #333;
+}
+
+/** Modais e Modulos **/
+#modalContador{
+
+}
+
+#modalContador .tempo h1{
+
+    font-size: 52px;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+
+}
+
+#modalMembros .modal-content{
+    background-color: transparent !important;
+    text-align: center;
+}
+
+#modalMembros .modal-title{
+    color: #FCDA64;
+    background-color: rgba(0,0,0,.9);
+    padding: 15px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+#modalMembros .close{
+    display: none;
+}
+
+#modalMembros .modal-header{
+    border-bottom: none;
+}
+
+#modalMembros .modal-footer{
+    border-top: none;
+}
+
+/** Tarefas em Tabela **/
+
+#tabelaTarefas{
+
+}
+
+#tabelaTarefas .participantes{
+
+}
+
+#tabelaTarefas .participantes svg{
+    width: 25px;
+}
+
+
+/** Reuniões **/
+
+#paginaReuniao .assunto{
+    margin-bottom: 15px;
+}
+
+#paginaReuniao .assunto b i{
+    color:#FCDA64;
+}
+
+#paginaReuniao .assuntos{
+    margin-bottom: 15px;
+}
+
+#paginaReuniao .assuntos li{
+    list-style: none;
+    padding-left: 10px;
+    font-weight: lighter;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+#paginaReuniao .participantes .membro{
+    transition: all .3s;
+    font-weight: lighter;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+}
+
+#paginaReuniao .participantes .membro:hover{
+    border-bottom: 1px solid #FCDA64;
+}
+
+#paginaReuniao .participantes .membro svg{
+    width: 25px;
+    margin-right: 10px;
+}
+
+#paginaReuniao .camera{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#reuniaoAcoes{
+    padding-left: 85px;
+}
+
+#reuniaoAcoes a{
+    background-color: #474642;
+    padding: 5px 10px 5px 10px  ;
+    color: #FFF;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.3s;
+}
+
+#reuniaoAcoes a:hover{
+    background-color: #FCDA64;
+    color: #000;
+}

@@ -1,0 +1,13 @@
+*{
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
+:root {
+    /** Cores **/
+    --cor-primaria: #1F2B33;
+    --cor-primaria-e1: #10161B; /* Tom pouco mais escuro da cor primaria */
+    --cor-secundaria: #FCDA64;
+    --preto: #151513;
+    --branco: #F9F9F9;
+}

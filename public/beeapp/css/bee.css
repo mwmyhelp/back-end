@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #F8DF51;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #9F690F;
+    border-radius: 6px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.bg-login-bee .bg-gray-100{
+    background: rgb(252,218,100);
+    background: radial-gradient(circle, rgba(250,224,85,1) 13%, rgba(157,103,15,1) 100%);
+}
+
+.text-bee-01{
+    color: #fcda64 !important;
+}
+
+
+.rounded-right-0{
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.rounded-left-0{
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+
+.note-editor.note-frame .note-btn{
+    color: #000 !important;
+}
+
+input[type=color]{
+    height: 2.5em !important;
+    padding: .2em !important;
+}
+
+/** Pages **/
+.page-title{
+    font-weight: 200;
+    margin-left: 10px;
+}
+
+#barra-empresa{
+    background-color: #474642 !important;
+    color: #FFF;
+    padding: 10px;
+    font-weight: 200;
+}
+
+#barra-empresa span{
+    color: #fcda64;
+}
+
+/** Cards **/
+
+.card-header{
+    display: flex;
+    align-items: center;
+    background-color: #E8E8E6 !important;
+    border-bottom: 3px solid #FCDA64 !important;
+    box-shadow: 0px 7px 3px 0px rgba(0,0,0,.04);
+}
+
+.card-header .simbolo{
+    height: 22px;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+.card-header .card-title{
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+/** Data Table **/
+.dataTables_wrapper{
+    padding: 0px !important;
+}
+
+.dataTable{
+    border-collapse: collapse !important;
+}
+
+.dataTable thead tr{
+    background-color: #474642;
+    color: #fff;
+}
+
+.dataTable thead th{
+    font-weight: 300;
+    height: 40px;
+    padding: 3px 8px 3px 8px !important;
+}
+
+.dataTable tbody td{
+    padding: 3px 8px 3px 8px !important;
+}
+
+.dataTables_wrapper .page-link{
+    background-color: #fcda64;
+    border-color: #fcda64;
+    color: #1a1a1a;
+}
+
+.dataTables_wrapper .page-item.active .page-link{
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+    color: #fcda64;
+}
+
+/** Estrutura */
+.main-panel{
+    position: inherit;
+    width: 100%;
+    float:left;
+}
+
+.navbar-header{
+    background-color: #FFF !important;
+}
+
+.navbar-brand{
+    max-width: 120px !important;
+}
+
+.navbar .link-modulos i{
+    font-size: 20px !important;
+}
+
+
+.navbar-nav{
+    color: #000;
+}
+
+.main-header .navbar-header[data-background-color] .navbar-nav .nav-item .nav-link{
+    color: #000 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbarNav .navbar-nav .nav-item .dropdown-menu{
+    box-shadow: 3px -1px 12px 4px rgba(0,0,0,.2) !important;
+    left:80px !important;
+    right: auto;
+}
+
+.main-header .navbar-header[data-background-color] .navbar-nav .nav-item.active .nav-link{
+    background-color: #FFF !important;
+    border-bottom: 2px solid #FBC70F;
+    border-radius: 0px;
+}
+
+.main-header .navbar-header .dropdown-toggle::after{
+    margin-left: 5px !important;
+}
+
+.main-header .navbar-header[data-background-color] .nav-search .input-group .form-control{
+    background-color: #FFF !important;
+    color: #4a5568 !important;
+    border: 1px solid rgba(0,0,0,.1) !important;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+
+.main-header .navbar-header[data-background-color] .nav-search .input-group .form-control:focus{
+    border-bottom: 2px solid #FBC70F !important;
+    border-left: none !important;
+}
+
+.main-header .navbar-header[data-background-color] .nav-search .input-group .btn{
+    background-color: #FFF !important;
+    border-left: 1px solid rgba(0,0,0,.1) !important;
+    border-top: 1px solid rgba(0,0,0,.1) !important;
+    border-bottom: 1px solid rgba(0,0,0,.1) !important;
+    box-shadow: -2px 2px 2px rgba(0,0,0,.1);
+}
+
+.main-header .navbar-header[data-background-color] .nav-search .input-group .btn i{
+    color: #FBC70F !important;
+}
+
+.main-header .navbar-header[data-background-color] .nav-search .input-group.focus .btn{
+    border-bottom: 2px solid #FBC70F !important;
+    border-right: none !important;
+}
+
+/** **/
+.bee-tree{
+    margin-top: 20px;
+}
+
+.bee-tree .box-novo{
+    border-style: dashed;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.2);
+    padding: 2px 5px 2px 5px;
+    transition: all .3s;
+    margin-top: 5px;
+    border-left: 3px solid rgba(0,0,0,.2);
+    font-size: 12px;
+    color: rgba(0,0,0,.6);
+}
+
+.bee-tree .box-novo:hover{
+    border-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.1);
+}
+
+.bee-tree .box-item{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.2);
+    padding: 2px 5px 2px 5px;
+    transition: all .3s;
+    margin-bottom: 2px;
+}
+
+.bee-tree .box-item:hover{
+    border-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.1);
+}
+
+/** Modificações Swal **/
+.swal-bee-1 .swal2-image{
+    float: left;
+    position: absolute;
+    top:-100px;
+}
+
+/** Modificações no Bootstrap **/
+
+
+.bee-aviso .card-title{
+    font-size: 15px;
+    padding: 1.25rem;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+}
+
+.bee-aviso .card-title img{
+    height: 25px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.btn-group-toggle .active{
+    background-color: #FCDA64 !important;
+    color: #000 !important;
+}
+
+/** Modificações no Editor **/
+
+.bee-line-editor .ce-block__content{
+    max-width: 100%;
+}
+
+.bee-line-editor .ce-inline-toolbar, .bee-line-editor .ce-settings{
+    border: 1px solid rgba(0,0,0,.3);
+    background-color: #474642;
+    transition: all .3s;
+}
+
+.bee-line-editor .ce-inline-tool:hover, .bee-line-editor .ce-settings__button:hover{
+    background-color: #20201E;
+}
+
+.bee-line-editor .ce-toolbar__settings-btn, .bee-line-editor .ce-toolbar__plus{
+    background-color: #20201E;
+    border-radius: 4px;
+}
+
+
+
+
+
+/** Loading **/
+:root {
+    --sqrt3: 1.73205080757;                      /* Square root of 3 */
+    --time: 11;                                  /* Duration of animation  */
+    --gap: 1;                                    /* Horizontal gap between hexagons */
+    --radius: 3;                                 /* Radius of inscribed circle */
+    --Gap: var(--gap) / 2 * var(--sqrt3);        /* Vertical gap between hexagons */
+    --Radius: 2 / var(--sqrt3) * var(--radius);  /* Radius of circumcircle */
+}
+
+@keyframes odd-animation {
+    0%   { transform: translate(calc( 0.5 * var(--offset-x) ), calc( 0.5 * var(--offset-y) )) scale(0) }
+    33%  { transform: translate(calc(   1 * var(--offset-x) ), calc(   1 * var(--offset-y) )) scale(1) }
+    66%  { transform: translate(calc(   2 * var(--offset-x) ), calc(   2 * var(--offset-y) )) scale(1) }
+    100% { transform: translate(calc(   3 * var(--offset-x) ), calc(   3 * var(--offset-y) )) scale(0) }
+}
+
+@keyframes even-animation {
+    50%  { transform: translate(calc( 1 * var(--offset-x) ), calc( 1 * var(--offset-y) )) scale(1) }
+    100% { transform: translate(calc( 2 * var(--offset-x) ), calc( 2 * var(--offset-y) )) scale(0) }
+}
+
+hex-principal{
+    position: absolute !important;
+    left: 0px;
+}
+
+.hex {
+    color: #130F00;
+    display: flex;
+    font-size: 3vmin;
+    height: calc(2em * var(--Radius));
+    width: calc(2em * var(--radius));
+}
+
+.hex::before {
+    border: calc(0.5em * var(--Radius)) solid transparent;
+    border-left: 0;
+    border-right: calc(1em * var(--radius)) solid currentColor;
+    content: "";
+    height: var(--Radius);
+}
+
+.hex::after  {
+    border: calc(0.5em * var(--Radius)) solid transparent;
+    border-left: calc(1em * var(--radius)) solid currentColor;
+    border-right: 0;
+    content: "";
+    height: var(--Radius);
+}
+
+.center {
+    position: relative;
+}
+
+#main-load .odd,
+#main-load .even {
+    --global-offset-x: calc( 0.5em * var(--gap) + var(--radius) * 1em);
+    --global-offset-y: calc( 1.5em * var(--Radius) + var(--Gap) * 1em);
+    animation: infinite cubic-bezier(.21, .61, .01, .89);
+    position: absolute;
+    transform: translate(0, 0) scale(0);
+}
+
+#main-load .odd {
+    animation-duration: 11s;
+}
+#main-load .even {
+    animation-duration: 7.333333333s;
+}
+
+.hex.first {
+    animation-delay: -6.2857142857s;
+}
+.hex.second {
+    animation-delay: -2.619047619s;
+}
+.hex.third {
+    animation-delay: 1.0476190476s;
+}
+
+@supports (animation-delay: calc(1 * 1s)) and (animation-duration: calc(1 * 1s)) {
+    #main-load  .odd {
+        animation-duration: calc(var(--time) * 1s);
+    }
+    #main-load  .even {
+        animation-duration: calc( var(--time) * 2 / 3 * 1s);
+    }
+
+    .hex.first {
+        animation-delay: calc( var(--time) / -1.75 * 1s );
+    }
+    .hex.second {
+        animation-delay: calc( var(--time) * 1.25 / -5.25 * 1s );
+    }
+    .hex.third {
+        animation-delay: calc( var(--time) * -0.25 / -2.625 * 1s );
+    }
+}
+
+.hex.one {
+    --offset-x: calc( var(--global-offset-x) * 1 );
+    --offset-y: calc( var(--global-offset-y) * -1 );
+    animation-name: odd-animation;
+    bottom: 0;
+    left: 0;
+}
+.hex.two {
+    --offset-x: calc( var(--global-offset-x) * 1.5 );
+    --offset-y: calc( var(--global-offset-y) * -0.5 );
+    animation-name: even-animation;
+    bottom: calc( var(--global-offset-y) * 0.5 );
+    left: calc( var(--global-offset-x) * 1.5 );
+}
+.hex.three {
+    --offset-x: calc( var(--global-offset-x) * 2 );
+    --offset-y: calc( var(--global-offset-y) * 0 );
+    animation-name: odd-animation;
+    bottom: 0;
+    right: 0;
+}
+.hex.four {
+    --offset-x: calc( var(--global-offset-x) * 1.5 );
+    --offset-y: calc( var(--global-offset-y) * 0.5 );
+    animation-name: even-animation;
+    top: calc( var(--global-offset-y) * 0.5 );
+    left: calc( var(--global-offset-x) * 1.5 );
+}
+.hex.five {
+    --offset-x: calc( var(--global-offset-x) * 1 );
+    --offset-y: calc( var(--global-offset-y) * 1 );
+    animation-name: odd-animation;
+    top: 0;
+    left: 0;
+}
+.hex.six {
+    --offset-x: calc( var(--global-offset-x) * 0 );
+    --offset-y: calc( var(--global-offset-y) * 1 );
+    animation-name: even-animation;
+    top: calc( var(--global-offset-y) * 1 );
+    left: 0;
+}
+.hex.seven {
+    --offset-x: calc( var(--global-offset-x) * -1 );
+    --offset-y: calc( var(--global-offset-y) * 1 );
+    animation-name: odd-animation;
+    top: 0;
+    right: 0;
+}
+.hex.eight {
+    --offset-x: calc( var(--global-offset-x) * -1.5 );
+    --offset-y: calc( var(--global-offset-y) * 0.5 );
+    animation-name: even-animation;
+    top: calc( var(--global-offset-y) * 0.5 );
+    right: calc( var(--global-offset-x) * 1.5 );
+}
+.hex.nine {
+    --offset-x: calc( var(--global-offset-x) * -2 );
+    --offset-y: calc( var(--global-offset-y) * 0 );
+    animation-name: odd-animation;
+    top: 0;
+    right: 0;
+}
+.hex.ten {
+    --offset-x: calc( var(--global-offset-x) * -1.5 );
+    --offset-y: calc( var(--global-offset-y) * -0.5 );
+    animation-name: even-animation;
+    bottom: calc( var(--global-offset-y) * 0.5 );
+    right: calc( var(--global-offset-x) * 1.5 );
+}
+.hex.eleven {
+    --offset-x: calc( var(--global-offset-x) * -1 );
+    --offset-y: calc( var(--global-offset-y) * -1 );
+    animation-name: odd-animation;
+    bottom: 0;
+    right: 0;
+}
+.hex.twelve {
+    --offset-x: calc( var(--global-offset-x) * 0 );
+    --offset-y: calc( var(--global-offset-y) * -1 );
+    animation-name: even-animation;
+    bottom: calc( var(--global-offset-y) * 1 );
+    left: 0;
+}
