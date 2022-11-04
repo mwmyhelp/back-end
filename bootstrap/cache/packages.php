@@ -6,13 +6,6 @@
       0 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
     ),
   ),
-  'beeappproject/laravel-filemanager' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'BeeApp\\LaravelFilemanager\\ServiceProvider',
-    ),
-  ),
   'facade/ignition' => 
   array (
     'providers' => 
