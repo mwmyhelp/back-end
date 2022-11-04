@@ -8,7 +8,6 @@
         "php": "^7.3|^8.0",
         "ext-gd": "*",
         "ext-json": "*",
-        "beeappproject/laravel-filemanager": "dev-main",
         "f9webltd/laravel-api-response-helpers": "^1.5",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",

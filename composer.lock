@@ -204,64 +204,6 @@
             "time": "2022-06-06T18:32:10+00:00"
         },
         {
-            "name": "beeappproject/laravel-filemanager",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/projetobeeapp/filemanager.git",
-                "reference": "2be784a28e349cd2d27232e6b786d802678a6952"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/projetobeeapp/filemanager/zipball/2be784a28e349cd2d27232e6b786d802678a6952",
-                "reference": "2be784a28e349cd2d27232e6b786d802678a6952",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "BeeApp\\LaravelFilemanager\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "BeeApp\\LaravelFilemanager\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "cc-by-nc-4.0"
-            ],
-            "authors": [
-                {
-                    "name": "Raphael Barboza",
-                    "email": "eletronic.raphael@gmail.com"
-                }
-            ],
-            "description": "Filemanager for BeeApp",
-            "keywords": [
-                "Media Manager",
-                "Simple",
-                "file manager",
-                "filemanager",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/projetobeeapp/filemanager/issues",
-                "source": "https://github.com/projetobeeapp/filemanager/tree/main"
-            },
-            "time": "2022-06-07T02:25:19+00:00"
-        },
-        {
             "name": "brick/math",
             "version": "0.9.3",
             "source": {
