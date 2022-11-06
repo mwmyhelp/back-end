@@ -59,8 +59,7 @@ return [
             'endpoint' => env('DIGITALOCEAN_SPACES_ENDPOINT'),
             'region' => env('DIGITALOCEAN_SPACES_REGION'),
             'bucket' => env('DIGITALOCEAN_SPACES_BUCKET'),
-            'scheme' => 'https',
-            'http_handler' => new App\GuzzleHandler(),
+            'scheme' => 'https'
         ],
 
     ],
