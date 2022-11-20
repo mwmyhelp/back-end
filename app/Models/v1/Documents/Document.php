@@ -55,8 +55,17 @@ class Document extends Model
 
     // Get few attributes as Author
     public function getAuthorAttribute(){
-        // Get only identification data
-        return $this->creator->asAuthor();
+        if($this->creator){
+            // Get only identification data
+            return $this->creator->asAuthor();
+        }else{
+            // Get none
+            return (object) [
+                'id' => '0',
+                'name' => 'Desconhecido',
+                'image' => 'unknow'
+            ];
+        }
     }
 
     /**
