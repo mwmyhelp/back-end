@@ -24,7 +24,7 @@ class FileObject extends Model
 
     public function getPermlinkAttribute(){
         // Return the FILE URL
-        return "https://api.beeapp.com.br/v1/files/get/".$this->attributes['id'];
+        return "https://api.mwmyhelp.com.br/v1/files/get/".$this->attributes['id'];
     }
 
 

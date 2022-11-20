@@ -51,7 +51,7 @@ class ImagesController extends Controller
         // Save Again
         $fileObject->save();
         // Return to CKEditor in their structure like in: https://ckeditor.com/docs/ckeditor5/latest/features/images/image-upload/simple-upload-adapter.html
-        return json_encode(["url" => "https://api.beeapp.com.br/v1/files/get/".$fileObject->id]);
+        return json_encode(["url" => "https://api.mwmyhelp.com.br/v1/files/get/".$fileObject->id]);
 
     }
 

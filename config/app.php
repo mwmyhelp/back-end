@@ -54,11 +54,11 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
-    'api_url' => env('API_URL','http://api.beeapp.local/api/'),
+    'api_url' => env('API_URL','http://api.mwmyhelp.local/api/'),
 
     'asset_url' => env('ASSET_URL', null),
 
-    'files_url' => env('FILES_URL','files.beeapp.local'),
+    'files_url' => env('FILES_URL','files.mwmyhelp.local'),
 
     /*
     |--------------------------------------------------------------------------
