@@ -43,9 +43,9 @@ class SenhaTemporariaConta extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject('Seja bem vindo a BeeApp - Uma nova conta foi criada')
-            ->line('Olá! Seja bem vindo ao Bee App, uma conta foi criada para o CPF ' . substr($this->cpf,0,3) . '.***.***-'.substr($this->cpf,8,2).' e a senha temporária é: ' . $this->senha)
-            ->action('Acessar o BeeApp', 'https://app.beeapp.com.br/')
+            ->subject('Seja bem vindo a MyHelp - Uma nova conta foi criada')
+            ->line('Olá! Seja bem vindo ao MyHelp, uma conta foi criada para o CPF ' . substr($this->cpf,0,3) . '.***.***-'.substr($this->cpf,8,2).' e a senha temporária é: ' . $this->senha)
+            ->action('Acessar o BeeApp', 'https://plataforma.mwmyhelp.com.br/')
             ->line('Em seu primeiro acesso será necessário a troca de senha.');
     }
 
