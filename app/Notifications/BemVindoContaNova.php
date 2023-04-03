@@ -42,7 +42,7 @@ class BemVindoContaNova extends Notification
         return (new MailMessage)
             ->greeting($notifiable->beetConta->pessoa->nome . ", seja bem vindo!")
             ->line('Sua conta foi criada com sucesso e você já pode começar utilizar nossa plataforma!')
-            ->action('Acessar a BeeApp', 'https://app.beeapp.com.br/')
+            ->action('Acessar a MyHelp', 'https://plataforma.mwmyhelp.com.br/')
             ->line('-----');
     }
 
