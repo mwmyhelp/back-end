@@ -603,7 +603,7 @@ class Colaboradores extends Controller
     }
 
     /** ↓↓↓ Novo Método */
-    public function desativarColaborador(Request $request, , $id_colaborador)
+    public function desativarColaborador(Request $request, $id_colaborador)
     {
         /** Desativar Colaborador **/
         //Validar
