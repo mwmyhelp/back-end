@@ -89,11 +89,6 @@ Route::group(['namespace' => 'Api'], function () {
 					C\AuthController::class,
 					'resetarSenha'
 				]);
-                //Desativar um usuário específico
-                Route::post('desativarUsuario', [
-                    C\AuthController::class,
-                    'desativarUsuario'
-                ]);
 			});
 		});
 		/** Rotas para Estrutura da Empresa **/
@@ -237,6 +232,11 @@ Route::group(['namespace' => 'Api'], function () {
 						C\Empresa\Colaboradores::class,
 						'unsetBeeLider'
 					]);
+                    //Desativar Colaborador
+                    Route::post('/desativarColaborador', [
+                        C\Empresa\Colaboradores::class,
+                        'desativarColaborador'
+                    ]);
 				});
 			});
 		});

@@ -58,7 +58,7 @@ class AuthController extends Controller
         if (Hash::check($request->password, $user->password)) {
 
             //Verificando se o usuário está ativo pelo campo role
-            if ($user->role == 'inativo_user') {
+            if ($user->role == 'inactive_user') {
                 return ResponseHelper::erroGeral("Usuário inativo.");
             }
 
@@ -103,25 +103,6 @@ class AuthController extends Controller
             return ResponseHelper::exception($e->getMessage(), 'Erro desconhecido');
         }
     }
-
-    /** ↓↓↓ Novo Método */
-    public function desativarUsuario(Request $request)
-    {
-        try {
-            $usuario = $this->repository->checkUser($request->get('cpf'));
-            if ($usuario) {
-
-                $usuario->role = 'inativo_user';
-                $usuario->save();
-
-                return ResponseHelper::sucessoAcao('Usuário', $usuario);
-            }
-        } catch (Exception $e) {
-            return ResponseHelper::exception($e->getMessage(), 'Erro desconhecido');
-        }
-        return ResponseHelper::erroGeral('Nenhum usuário foi encontrado');
-    }
-
 
     /** ↓↓↓ Novo Método */
     public function alterarSenha(Request $request)
