@@ -602,27 +602,6 @@ class Colaboradores extends Controller
 
     }
 
-    /** ↓↓↓ Novo Método */
-    public function desativarColaborador(Request $request, $id_colaborador)
-    {
-        /** Desativar Colaborador **/
-        //Validar
-        \Validator::validate(['id_colaborador' => $id_colaborador], [
-            'id_colaborador' => 'required|string|size:36|exists:empresa_colaboradores,id',
-        ]);
-        //Obtendo Colaborador
-        $colaborador = Colaborador::where('bee_conta', \Auth::user()->bee_conta)->where('id', $id_colaborador)->firstOrFail();
-        //Obter usuário
-        $user = $colaborador->usuario;
-        //Desativar Colaborador setando inative_user no role
-        $user->role = 'inactive_user';
-        //Salvando
-        $user->save();
-
-        //Retornando
-        return ResponseHelper::sucessoAcao("Colaborador desativado.");
-    }
-
     /** ↓↓↓ Nova Estrutura */
     public function setBeeLider(Request $request, $id_colaborador)
     {

@@ -232,10 +232,10 @@ Route::group(['namespace' => 'Api'], function () {
 						C\Empresa\Colaboradores::class,
 						'unsetBeeLider'
 					]);
-                    //Desativar Colaborador
-                    Route::post('/desativarColaborador', [
+                    //remover Colaborador
+                    Route::post('/removerColaborador', [
                         C\Empresa\Colaboradores::class,
-                        'desativarColaborador'
+                        'remover'
                     ]);
 				});
 			});
